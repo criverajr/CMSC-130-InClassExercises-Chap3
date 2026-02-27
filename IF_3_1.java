@@ -19,6 +19,12 @@ public class IF_3_1
       
       // use if/else statement to print out pass/fail
       // based on a numerical grade >=60 (pass), < fail
-      
+      String letterGrade = "";
+      if(grade >= 60){
+          letterGrade = "Pass";
+      }else{
+          letterGrade = "Fail";
+      }
+      System.out.println("Grade " + grade + " = " + letterGrade);
    }    
 }
