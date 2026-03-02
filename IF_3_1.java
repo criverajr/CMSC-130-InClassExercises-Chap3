@@ -11,20 +11,26 @@ import java.util.Scanner;
 
 public class IF_3_1
 {
-   public static void main(String[] args)
-   {  
-      Scanner in = new Scanner(System.in);
-      System.out.print("Please enter a numeric grade: ");
-      double grade = in.nextDouble();
-      
-      // use if/else statement to print out pass/fail
-      // based on a numerical grade >=60 (pass), < fail
-      String letterGrade = "";
-      if(grade >= 60){
-          letterGrade = "Pass";
-      }else{
-          letterGrade = "Fail";
-      }
-      System.out.println("Grade " + grade + " = " + letterGrade);
-   }    
+    public static void main(String[] args)
+    {  
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please enter a numeric grade: ");
+        double grade = in.nextDouble();
+
+        // use if/else statement to print out pass/fail
+        // based on a numerical grade >=60 (pass), < fail
+        String letterGrade = "";
+        if(grade >= 60){
+            letterGrade = "Pass";
+        }else{
+            letterGrade = "Fail";
+        }
+        System.out.println("Grade " + grade + " = " + letterGrade);
+
+        String letterGrade2 = "";
+        if(grade >= 60){
+            letterGrade2 = "Pass";
+        }
+        System.out.println("Grade " + grade + " = " + letterGrade2);
+    }
 }
