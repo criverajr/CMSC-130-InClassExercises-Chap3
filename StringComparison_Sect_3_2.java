@@ -23,13 +23,30 @@ public class StringComparison_Sect_3_2
       String str2 = in.next();
       
       // lexicographic order between str1 and str2
+      if(str1.compareTo(str2) < 0){
+          System.out.println(str1 + " comes before " + str2);
+      }
       
+      if(str1.compareTo(str2) == 0){
+          System.out.println(str1 + " equals " + str2);
+      }
+      
+      if(str1.compareTo(str2) > 0){
+          System.out.println(str2 + " comes before " + str1);
+      }
       
       // Use equals method for content comparison
-      
+      if(str1.equals(str2)){
+          System.out.println(str1 + " equals " + str2);
+      }
       
       // comparing two string reference
-      
+      if(str1 == str2){
+          System.out.println(str1 + " has the same reference as " + str2);
+      } else{
+          System.out.println(str1 + " does not share a reference with " + str2);
+
+      }
       
    }    
 }
