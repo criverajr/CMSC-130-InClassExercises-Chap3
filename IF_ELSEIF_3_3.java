@@ -28,5 +28,18 @@ public class IF_ELSEIF_3_3
         } else {
             System.out.println(grade + " => E");
         }
+        
+        // option 2
+        if (grade >= 90){
+            System.out.println(grade + " => A");
+        } if (grade >= 80 && grade < 90){
+            System.out.println(grade + " => B");
+        } if (grade >= 70 && grade < 80){
+            System.out.println(grade + " => C");
+        } if (grade >= 60 && grade < 70){
+            System.out.println(grade + " => D");
+        } if (grade < 60) {
+            System.out.println(grade + " => E");
+        }
     }    
 }
