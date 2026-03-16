@@ -10,13 +10,23 @@ import java.util.Scanner;
 
 public class IF_ELSEIF_3_3
 {
-   public static void main(String[] args)
-   {  
-      Scanner in = new Scanner(System.in);
-      System.out.print("Enter a numeric grade [0-100]: ");
-      double grade = in.nextDouble();
-      
-      // use if/else if/else statement to print out "A/B/C/D/E"
-      
-   }    
+    public static void main(String[] args)
+    {  
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a numeric grade [0-100]: ");
+        double grade = in.nextDouble();
+
+        // use if/else if/else statement to print out "A/B/C/D/E"
+        if (grade >= 90){
+            System.out.println(grade + " => A");
+        } else if (grade >= 80){
+            System.out.println(grade + " => B");
+        } else if (grade >= 70){
+            System.out.println(grade + " => C");
+        } else if (grade >= 60){
+            System.out.println(grade + " => D");
+        } else {
+            System.out.println(grade + " => E");
+        }
+    }    
 }
