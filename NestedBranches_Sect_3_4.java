@@ -43,7 +43,13 @@ public class NestedBranches_Sect_3_4
       
       // computing taxes for the married status
       // your code here
-      
+      else{
+          if(income <= MARRIED_LIMIT){
+              tax = RATE1 * income;
+          } else {
+              tax = RATE1 * MARRIED_LIMIT + RATE2 * (income - MARRIED_LIMIT);
+          }
+      }
       
       // print it out
       System.out.println("The tax is $" + tax);
